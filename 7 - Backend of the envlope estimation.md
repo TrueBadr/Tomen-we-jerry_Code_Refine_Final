@@ -1,0 +1,16 @@
+# Backend of the envlope estimation 
+- Let's Assume that we have 
+	- 10 Milion Registered users 
+	- 1 Milion DAU Daily Active users 
+	- 100 request / user / day 
+	- so we have daily = 100 Milion requests/day 
+- Avrage QPS :
+	- 100M / 86,500 = 1,157 QPS ( Query Per second )
+- Let's Assume that there are available 100 Robot for gathering cart element 
+	-  1000 payment actions for a day 
+	- avrage of cart elements is 5 
+	- cart elements for a day is = 1000 * 5 = 5000 
+	- robot take almost 30 second to reach a specific element 
+	- so the preparation for a 
+		- cart in a 150 seconds 
+		- per a day is = 5000 * 30 / 100 = 25 Minutes per day
