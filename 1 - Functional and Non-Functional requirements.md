@@ -1,0 +1,20 @@
+# Functional and Non-Functional requirement
+- Functional requirements
+    - Customers can search products
+    - Customers can add the products and quantities to the cart
+    - customer can track their order from the moment it placed ((Placed → Confirmed → Picking → Packed → Shipped → Out for Delivery → Delivered)
+    - system receives orderes
+    - system sends notifications to the customers can review the status of the order whenever the order status changed
+    - the system can notify operators about the important events like (robot failure / delayed order / robot with low battery)
+    - when order is confirmed the system decide how many robots to collect the products in the confirmed order based on number of items and the weights
+    - wharehous operators can view the order status 
+    - system must handle robot breakdown
+- Non-Functional Requirements
+    - the system must have the concept of idempotency ( makes sure the same order is never processed twice, even if it is submitted more than once.)
+    - the system must have the ability of saving thousands products
+    - the system must ensure the product availability (when customer order a product system check if it there?)
+    - the system must handle the click first problem approach make the poriority for the first client click the order button within the timing of transaction
+    - the system must have the ability for scaling to billions of users and requests
+    - the products may be shown within less than 2s not greater than 2s
+    - the order operation must be low latency les than 20ms
+    - fully follwing of robots status for awareness
